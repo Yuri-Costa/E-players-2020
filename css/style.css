@@ -7,7 +7,7 @@
 --red:#c20000;
 --blue:#001f70;
 --font: 'Titillium Web', sans-serif;
-
+--gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
 }
 *{
     margin: 0;
@@ -17,31 +17,88 @@
 
 }
 body{
-    background-color: var(--background-color);
+    font-size: 20px;
+    background: var(--background);
     font-family: var(--font);
 
 }
+.header-top{
+    width: 100%;
+    height: 5em;
+   
+   
+}
 
-.btn{
+.content{
+    width: 100%;
+    height:100% ;
+   max-width:75em ;
+   
+   margin: auto
+}
+.flex-spbt-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.img{
+    width: 100%;
+}
+
+.header-top img{
+   
+    max-width: 21.18em; 
+
+}
+.menu{
+    width: 100%;
+    max-width:50em ;
+
+}
+
+.menu ul{
+   
+    list-style-type: none;
+    
+
+
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.9em 0.66em;
+   
+
+}
+.menu a:hover{
     background-color: var(--red);
+    text-shadow: 0 0 20px #ffff;
+    text-decoration: underline;
+}
+.menu-bars{
+    display: none;
+}
+@media screen and(max-width:74.93em){
+
+
 
 }
 
-@media screen and(max-width:1199px){
-body{
-    background-color:var(--red) ;
-}
+@media screen and(max-width:61.93em){
+ 
 
 }
 
-@media screen and(max-width:991px){
-   body{ background-color:var(--blue);}
-}
-
-@media screen and(max-width:767px){
+@media screen and(max-width:47.93em){
     
+
 }
 
-@media screen and(max-width:576px){
+@media screen and(max-width:36em){
     
+
 }
