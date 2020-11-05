@@ -362,18 +362,74 @@ img{
 }
 
 /* Até 1199px */
-@media screen and (max-width: 74.93em){
+@media screen and  (max-width: 74.93em){
 
 }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
+    .header-top{
+        height: 3.93em;
+    }
+   .menu{
+    font-size: 0.69em;
+    }
+     .banner-content .banner-text h1{
+        font-size: 4.33em;
+     }
+
+     .banner-content .banner-text p{
+         font-size: 1.5em;
+     }
+     .games{
+         height: 5.5em;
+     }
+     
+     .content img{
+         width: 18em;
+     }
+     .games .content img{
+         width: 9em ;
+     }
+     .content-about img{
+         max-width: 27em;
+     }
+     .content-about p{
+         font-size: 1.1em;
+     }
+    .time1 img{
+        max-width: 1.1em;
+    }
+    .time2 img{
+        max-width: 1.1em;
+    }
+    .games-embreve h2{
+       font-size: 1em;
+    }
     
-}
+    .games-aovivo h2{
+        font-size: 1em;
+    }
+    .content-news img{
+        height: auto;
+        width: 15em;
+
+    }
+   .siga-nos img{
+       height: auto;
+       width: 2.88em;
+    
+   }
+        .rodape1 img{
+       width: 13em;
+   }
+    
+
 /* até 767px */
 @media screen and (max-width: 47.93em){
    
 }
 /* Até 576px */
 @media screen and (max-width: 36em){
+
 
 }
