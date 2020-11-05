@@ -20,7 +20,7 @@
 body{
     background-color: var(--background);
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 12px;
 }
 img{
     width: 100%;
@@ -396,6 +396,13 @@ img{
      .content-about p{
          font-size: 1.1em;
      }
+     .news h2{
+         display: flex;
+         justify-content: center;
+     }
+     .next-games h2{
+         font-size: 1.5em;
+     }
     .time1 img{
         max-width: 1.1em;
     }
@@ -405,19 +412,16 @@ img{
     .games-embreve h2{
        font-size: 1em;
     }
-    
     .games-aovivo h2{
         font-size: 1em;
     }
     .content-news img{
         height: auto;
         width: 15em;
-
     }
    .siga-nos img{
        height: auto;
        width: 2.88em;
-    
    }
         .rodape1 img{
        width: 13em;
@@ -426,10 +430,56 @@ img{
 
 /* até 767px */
 @media screen and (max-width: 47.93em){
-   
-}
+    .header-top{
+        height: 4.93em;
+    }
+   .menu{
+    font-size: 0.869em;
+    }
+     .banner-content .banner-text h1{
+        font-size: 3.33em;
+     }
+
+     .banner-content .banner-text p{
+         font-size: 1em;
+     }
+    
+     .games{
+         height: 5.5em;
+     }
+     
+     .content img{
+         width: 16em;
+     }
+     .games .content img{
+         width: 8em ;
+     }
+
+     .text-about h2{
+         font-size: 2.2em;
+        
+        
+     }
+     .text-about p{
+         font-size: 1.2em;
+     }
+     .content-about img{
+         max-width: 27em;
+     }
+     .content-news img{
+        height: auto;
+        width: 15em;
+    }
+    .siga-nos img{
+        height: auto;
+        width: 2.88em;
+    }
+         .rodape1 img{
+        width: 13em;
+    }
+    
 /* Até 576px */
 @media screen and (max-width: 36em){
 
-
 }
+
