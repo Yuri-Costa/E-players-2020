@@ -1,229 +1,379 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
---background-color: #000000;
---red:#c20000;
---blue:#001f70;
---font: 'Titillium Web', sans-serif;
---gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    
+    --background: #000000;
+    --bgnews: #1E1C21;
+    --red: #C20000;
+    --blue: #001F70;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    --font: 'Titillium Web', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-
 }
-body{
-    font-size: 20px;
-    background: var(--background);
-    font-family: var(--font);
 
+body{
+    background-color: var(--background);
+    font-family: var(--font);
+    font-size: 16px;
+}
+img{
+    width: 100%;
 }
 .header-top{
     width: 100%;
     height: 5em;
-   
-   
+    /* background-color: aliceblue; */
 }
-
 .content{
-    width: 100%;
-    height:100% ;
-   max-width:75em ;
-   
-   margin: auto
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: auto;
 }
 .flex-spbt-center{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
-.img{
-    width: 100%;
+.flex-spar-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
 .header-top img{
-   
-    max-width: 21.18em; 
-
+    max-width: 21.18em;
 }
 .menu{
     width: 100%;
-    max-width:50em ;
-
+    max-width: 50em;
 }
-
 .menu ul{
-   
     list-style-type: none;
-    
-
 
 }
 .menu a{
-    color: white;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 0.9em 0.66em;
-   
-
 }
 .menu a:hover{
     background-color: var(--red);
-    text-shadow: 0 0 20px #ffff;
+    text-shadow: 0 0 20px #fff;
     text-decoration: underline;
 }
-.menu-bars{
+#menu-bars{
     display: none;
 }
 .banner{
-  position: relative;
+    position: relative;
 }
 .banner-container{
-    width:100% ;
-    height:100% ;
-    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
     top: 0;
 }
 .banner-content{
-    width: 80%; ;
-    height:100% ;
-    background-color: blanchedalmond;
+    width: 95%;
+    height: 100%;
+    /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
- .banner-text{
-     width: 50%;
-     height:100% ;
-     display: flex;
-     justify-content: center;
-     color: #ffffff;
-     align-items: center;
-     padding: 0.5em 1.2em;
-    border-radius: 0.5px;
-     
-
- }
-
- 
-
- .banner-text-a{
-  color: #ffffff;
-  font-size:1.87em ;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color:var(--red);
-  padding: 0 5em ;
- }
- .games{
+.banner-text{
+    width: 50%;
+    height: 100%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+.banner-text h1{
+    font-size: 5.62em;
+}
+.banner-text p{
+    font-size: 1.87em;
+}
+.banner-text a{
+    color:#fff;
+    font-size: 1.87em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+.games{
     width: 100%;
     height: 7.5em;
-  
+    /* background-color: yellow; */
 }
 .games ul{
     width: 100%;
+    /* background-color: red; */
     list-style-type: none;
 }
-
 .games img{
     width: 170px;
-
+  
 }
 .games ul a:hover img{
-   transform: scale(1.5);
     transition: 0.5s;
-
-
+    transform:scale(1.5);
 }
-.banner-text-h1{
-    font-size: 3.62em;
 
-}
-.banner-text-p{
-    font-size: 1.87em;
-
-
-}
-.about{
-    height:31.25em;
+.about {
+    height: 31.25em;
     background-color: var(--blue);
+
     position: relative;
 }
 
-
-.about-angulation{
+.about-angulation {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
-
-.angulation{
-    height:  24.125em;
+.angulation {
+    height: 24.125em;
     width: 100%;
-    background-color: var(--background-color);
-    transform: skewY(-4deg);
+    background-color: var(--background);
 
- 
- }
+    transform: skewY(-4deg);   
+}
 
- .container-about{
-     color: #ffffff;
-     position: absolute;
-     top: 0;
-    
- }
- .content-about{
-    width: 80%;
+.container-about {
+    color: white;
+    position: absolute;
+    top: 0
+}
+
+.content-about {
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.text-about{
+.text-about {
     width: 50%;
     text-align: justify;
 }
 
-.text-about  h2{
+.text-about h2 {
     margin-bottom: 1em;
-    font-size: 2.18em;
+    font-size: 2.1875em;
 }
-.text-about p{
+
+.text-about p {
     font-size: 1.25em;
 }
 
-.content-about img{
-    max-width: 31.87em;
+.content-about img {
+    max-width: 31.875em;
+}
+.linha{
+    border:solid 1px #fff;
+    height: 3em;
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    font-size: 1.5625em;/*30px*/
+    justify-content: space-between;
 
 }
-@media screen and(max-width:74.93em){
-
-
-
+.partida{
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em;
 }
-
-@media screen and(max-width:61.93em){
- 
-
+.time1, .time2{
+    display: flex;
+    align-items: center;
 }
-
-@media screen and(max-width:47.93em){
+.partida img{
+    width: 1.8em;
+}
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
+/* Início notícias */
+.bg-news{
+    width: 100%;
+    height: auto;
+    background-color: var(--bgnews);
+}
+.news{
+    width: 70%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+.next-games{
+    width: 25%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
     
-
+}
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);
+}
+.cardnews h3{
+    padding: 0.5em 0.6em;
+}
+.cardnews p{
+    padding: 0em 0.6em;
+}
+.next-games-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    font-weight: 700;
+    color: #fff;
+    
+}
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.next-games-match div{
+    display: flex;
+    align-items: center;
+}
+.next-games-match img{
+    max-width: 2.5em;
+}
+.next-games-match > p{
+    margin-top: 1em;
 }
 
-@media screen and(max-width:36em){
+.links-footer {
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape {
+    padding: 1em 0;
+}
+
+.logo-rodape {
+    width: 19.06em;
+}
+
+.sociais h2 {
+    color: white;
+}
+
+.sociais > h2 {
+    font-size: 0.875em;
+    margin-bottom: 0.5em;
+}
+
+.sociais form {
+    display: flex;    
+    margin-bottom: 0.5em;
+}
+
+.sociais input[type="email"]{
+    height: 2.3125em;
+    width: 12.1875em;    
+}
+
+.sociais input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-weight: bold;
+}
+
+.sociais input[type="submit"]{
+    width: 9.75em;
+    color: white;
+    background-color: #8326EF;
+    font-size: 1.1em;
+}
+
+.siga-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+
+/* Até 1199px */
+@media screen and (max-width: 74.93em){
+
+}
+/* Até 991px */
+@media screen and (max-width: 61.93em){
     
+}
+/* até 767px */
+@media screen and (max-width: 47.93em){
+   
+}
+/* Até 576px */
+@media screen and (max-width: 36em){
 
 }
