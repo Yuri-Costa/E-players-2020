@@ -363,6 +363,9 @@ img{
 
 /* Até 1199px */
 @media screen and  (max-width: 74.93em){
+    .header-top{
+        height: 7.93em;
+    }
 
 }
 /* Até 991px */
@@ -480,6 +483,25 @@ img{
     
 /* Até 576px */
 @media screen and (max-width: 36em){
+    .header-top{
+        height: 4.93em;
+    }
+   
+    .menu ul{
+        width: 100%;
+        height: 5em;
+        flex-direction: column;
+        list-style-type:none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        
+    }
+    
+    
+
 
 }
+
 
