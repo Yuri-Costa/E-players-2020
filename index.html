@@ -17,7 +17,7 @@
         <div class="content flex-spbt-center">
             <img src="img/logo.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul id class="flex-spbt-center">
+                <ul id="myLinks" class="flex-spbt-center">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
@@ -25,11 +25,13 @@
                     <li><a href="#">Cadastro/Login</a></li>
                 </ul>
             </nav>
-            <a href="#"
+            <a href="#" class="btnMenu"onclick= "botaodomenu()">
             <i class="fas fa-bars"></i>
-        </a>
+            </a>
+            
+        
        
-        </div>
+        
     </header>
     <main>
         <section class="banner">
@@ -313,7 +315,16 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        function botaodomenu() {
+          var ulDoMenu = document.getElementById("myLinks");
+          if (ulDoMenu.style.display === "flex") {
+            ulDoMenu.style.display = "none";
+          } else {
+            ulDoMenu.style.display = "flex";
+          }
+        }
+        </script>
 </body>
 
 </html>

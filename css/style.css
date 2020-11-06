@@ -361,12 +361,16 @@ img{
     margin-top: 0.8em;
 }
 
+
 /* Até 1199px */
 @media screen and  (max-width: 74.93em){
     .header-top{
         height: 7.93em;
     }
-
+    .btnMenu{
+        display: none;
+    }
+    
 }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
@@ -376,6 +380,10 @@ img{
    .menu{
     font-size: 0.69em;
     }
+    .btnMenu{
+        display: none;
+    }
+    
      .banner-content .banner-text h1{
         font-size: 4.33em;
      }
@@ -439,6 +447,9 @@ img{
    .menu{
     font-size: 0.869em;
     }
+    .btnMenu{
+        display: none;
+    }
      .banner-content .banner-text h1{
         font-size: 3.33em;
      }
@@ -489,19 +500,71 @@ img{
    
     .menu ul{
         width: 100%;
-        height: 5em;
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+       
         flex-direction: column;
         list-style-type:none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        position: absolute;
+       position: absolute;
+        z-index: 99;
+        top: 5.71em;
+       left: 0;
+    
+        
+       
+       
+    }
+    .menu ul a:hover{
+        background-color: unset;
+    }
+    .menu{
+        width: 100%;
+        
         
     }
     
-    
+    .content img{
+        width: 28em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .header-top>.flex-spbt-center{
+       flex-direction: columns;
+   }
+   .text-about h2{
+    font-size: 1.5em;
+   
+   
+}
+.text-about p{
+    font-size: 1.1em;
+}
+.content-about img{
+    max-width: 19em;
+}
+.content-news img{
+    height: auto;
+    width: 15em;
+}
+.siga-nos img{
+    height: auto;
+    width: 2.88em;
+}
+     .rodape1 img{
+    display: none;
+}
+
+.btnMenu{
+    display: block;
+    font-size: 2.8em;
 
 
 }
+
+
 
 
